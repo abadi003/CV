@@ -1,0 +1,27 @@
+<div class="site-section" id="about-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-5">
+        <img src="./assets/images/abadi_working.jpg" alt="Image" class="img-fluid">
+      </div>
+      <div class="col-lg-5 ml-auto section-title">
+        <h2 class="title text-primary mb-3">About me</h2>
+        <p class="mb-4">Fresh graduate looking forward to proving my ability with the team to create modular solutions
+          using latest technology and farmworkers. I am eager to learn and increase my knowledge to
+          implement enterprise solution that follow best practices</p>
+        <div class="d-flex">
+          <ul class="list-unstyled ul-check success mr-5">
+            <li *ngFor = "let category of even"> {{category}} </li>
+
+          </ul>
+          <ul class="list-unstyled ul-check success">
+
+            <li *ngFor ="let category of odd"> {{category}} </li>
+
+          </ul>
+        </div>
+        <!-- <p><a data-fancybox data-ratio="2" href="https://vimeo.com/326176805" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span> <span>Watch the video</span></a></p> -->
+      </div>
+    </div>
+  </div>
+</div>

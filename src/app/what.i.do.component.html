@@ -1,0 +1,28 @@
+<section class="cd-section">
+<div class="site-section" id="what-we-do-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6 section-title">
+        <span class="sub-title mb-2 d-block">What I Do</span>
+        <h2 class="title text-primary">
+          Far far away, behind the word mountains far from the countries
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 ml-auto">
+        <div class="row">
+          <div
+            class="col-md-6 col-lg-4 mb-4 mb-lg-4"
+            *ngFor="let category of category"
+          >
+            <div class="service h-100">
+              <h3>{{category}}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
