@@ -16,7 +16,7 @@ export class DB {
         './assets/images/safahatyComMainPageMobile.jpg',
       ],
     },
-    { name: 'superC', category:Category.Android , created: '2019-04-10', description: "An application for calculating the area and perimeter of geometric shapes" , viewURL:"" , pic: ['./assets/images/culc_pic']},
+    { name: 'superC', category:Category.Android , created: '2019-04-10', description: "An application for calculating the area and perimeter of geometric shapes" , viewURL:"" , pic: ['./assets/images/culc_pic.jpg']},
   ];
 
   constructor() {}

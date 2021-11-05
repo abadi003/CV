@@ -1,10 +1,10 @@
-FROM node:14-alpine
-ENV NODE_ENV=production
+FROM node:12.20
+RUN mkdir /usr/src/app
+RUN cd /usr/src/app
 WORKDIR /usr/src/app
-COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
-RUN npm install --production --silent && mv node_modules ../
 COPY . .
+RUN npm install -g @angular/cli
+RUN npm i
+COPY . .
+CMD ["ng","serve", "--port" , "2" ,"--host", "0.0.0.0", "--disable-host-check"]
 EXPOSE 2
-RUN chown -R node /usr/src/app
-USER node
-CMD ["npm", "start"]
